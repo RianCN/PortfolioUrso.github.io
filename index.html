@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/mediaqueries.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="icon" href="assets/img/🐻.svg" type="image/svg-xml">
+
+  <title>Rian Costa</title>
+</head>
+
+<body>
+
+  <header>
+    <!--------------NAV------------->
+
+    <nav id="desktop-nav">
+      <div class="logo">Rian Costa<span class="marrom">.</span></div>
+      <div>
+        <ul class="nav-links">
+
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#experiencia">Experiências</a></li>
+          <li><a href="#projeto">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!--------------MENU MOBILE------------->
+
+    <nav id="hamburger-nav">
+
+      <div class="logo">Rian Costa<span class="marrom">.</span></div>
+
+      <div class="hamburger-menu">
+
+        <div class="hamburger-icon" onclick="toggleMenu()">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+        <div class="menu-links">
+
+          <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiências</a></li>
+          <li><a href="#projeto" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--------------TELA INICIAL------------->
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/img/urso.png" alt="urso pardo">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, eu sou</p>
+
+   <!--- NAO DEU CERTO COMO NO FIGMA <div class="seta"><img src="assets/img/seta.svg" alt=""></div>
+
+    <div class="risco"><img src="assets/img/Risco01.png" alt=""></div>----->
+
+      <h1 class="title">Rian Costa<span class="marrom">.</span></h1>
+      <p class="section__text__p2">Front-End e IU/UX Designer</p>
+
+
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Curriculo.pdf')">
+          Baixar CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contato'">
+          Contate me
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="assets/img/linkedin.png" alt="meu linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/rian-costa/'">
+        <img src="assets/img/github.png" alt="meu linkedin" class="icon" onclick="location.href='https://github.com/RianCN'">
+      </div>
+    </div>
+  </section>
+
+  <!--------------SOBRE MIM------------->
+
+  <section id="about">
+    <p class="section__text__p1">Um pouco</p>
+    <h2 class="title">Sobre mim<span class="marrom">.</span></h2>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/img/sobremim.png" alt="Urso Pardo" class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="./assets/img/experience.png" alt="icon de experiencia" class="icon">
+            <h3>Experiência</h3>
+            <p>0 Anos <br>Front-End <span class="marrom">& UI/UX Designer</span></p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/img/education.png" alt="icon de educação" class="icon">
+            <h3>Educação</h3>
+            <p> Uninter <br>Tecnologia em Análise e Desenvolvimento de Sistemas</span></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="sobre-mim">Olá, meu nome é Rian, tenho 18 anos, nasci em Pernambuco e estudo Análise e Desenvolvimento de Sistemas. Busco ingressar no mercado de trabalho como Web Developer e UI/UX Designer. Estou determinado a demonstrar meu entusiasmo, disposição para aprender e paixão pela tecnologia, destacando projetos pessoais e trabalhos acadêmicos relevantes que evidenciem minhas habilidades e dedicação à área.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/img/arrow.png" alt="seta para baixo" class="icon arrow" onclick="location.href='./#experiencia'">
+  </section>
+
+
+  <!--------------EXPERIENCIA------------->
+
+  <section id="experiencia">
+    
+    <p class="section__text__p1">Explore minhas</p>
+    <h2 class="title">Experiências</h2>
+    <div class="experiencia-details-container">
+      <div class="about-container">
+        <div class="details-container">
+          <h3 class="experiencia-sub-title">Front-End <span class="marrom">&</span> UI/UX Designer</h3>
+          <div class="article-container">
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>HTML</h4>
+                <p>Intermediario</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>CSS</h4>
+                <p>Intermediario</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>JAVASCRIPT</h4>
+                <p>Intermediario</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>REACT</h4>
+                <p>Intermediario</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>FIGMA</h4>
+                <p>Intermediario</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h3 class="experiencia-sub-title">Back-End</h3>
+          <div class="article-container">
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>Node.js</h4>
+                <p>Estudando</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>GIT</h4>
+                <p>Estudando</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>JAVA</h4>
+                <p>Estudando</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/img/checkmark.png" alt="" class="icon">
+              <div>
+                <h4>PYTHON</h4>
+                <p>Estudando</p>
+              </div>
+            </article>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/img/arrow.png" alt="seta para baixo" class="icon arrow" onclick="location.href='./#projeto'">
+  </section>
+
+  <!--------------PROJETO------------->
+ <section id="projeto">
+    <p class="section__text__p1">Meus recentes</p>
+    <h2 class="title">Projetos<span class="marrom">.</span></h2>
+    <div class="experiencia-details-container">
+      <div class="about-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-1.png" alt="Projeto 1" class="projet-img">
+          </div>
+          <h3 class="experiencia-sub-title project-title">VelocityVortex</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RianCN/VelocityVortex.github.io'">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://riancn.github.io/VelocityVortex.github.io/'">
+              Demo Live
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-2.png" alt="Projeto 1" class="projet-img">
+          </div>
+
+          <h3 class="experiencia-sub-title project-title"> Porjeto Dois</h3>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RianCN/RianCN.github.io'">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://riancn.github.io/'">
+              Demo Live
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-3.png" alt="Projeto 1" class="projet-img">
+          </div>
+          <h3 class="experiencia-sub-title project-title">Em Breve</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              Demo Live
+            </button>
+          </div>
+        </div>
+      </div>
+
+  <!--------------CONTATO------------->
+
+  <section id="contato">
+    <p class="section__text__p1">Entre em</p>
+    <h2 class="title">Contato<span class="marrom">.</span></h2>
+    <div class="contatc-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/img/email.png" alt="email icon" class="icon contact-icon email-icon">
+        <p><a href="malito:rian.costa20@outlook.com">rian.costa20@outlook.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/img/linkedin.png" alt="email icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/rian-costa/">Linkedin</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!---------------FOOTER---------------->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#experiencia">Experiências</a></li>
+          <li><a href="#projeto">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright © 2023 Rian Costa. Todos Direitos Reservados</p>
+  </footer>
+
+</body>
+
+<script defer src="assets/js/main.js"></script>
+
+</html>
